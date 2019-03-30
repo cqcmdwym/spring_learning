@@ -1,10 +1,12 @@
 package com.how2java.pojo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component("p")
 public class Product {
 	private int id;
-    private String name;
+    private String name = "Product 1";
     @Autowired
     private Category category;
     public int getId() {
